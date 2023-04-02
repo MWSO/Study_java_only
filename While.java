@@ -11,5 +11,16 @@ public class While {
       test *= 5;
       System.out.println(test);
     }
+
+    for (int i = 1; i < 10; i += 2) {
+      if (i == 1 || i == 5) {
+        continue;
+      }
+      for (int j = 1; j < 10; j++) {
+        System.out.print(i * j);
+        System.out.print(" ");
+      }
+      System.out.println("");
+    }
   }
 }
