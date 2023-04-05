@@ -15,6 +15,8 @@ public class DNA {
     for (int value : seq) {
       sum += value;
     }
+    double avg = (double)sum / (double)seq.length;
     System.out.println(sum);
+    System.out.println(avg);
   }
 }
