@@ -9,5 +9,15 @@ public class Score {
 
     int[] test = new int[] {30, 50, 70, 90};
     System.out.println(test[2]);
+
+    int sum = 0;
+    int avr = 0;
+
+    for (int i = 0; i < test.length; i++) {
+      sum += test[i];
+      avr = sum / test.length;
+    }
+    System.out.println("合計点：" + sum);
+    System.out.println("平均点：" + avr);
   }
 }
