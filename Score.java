@@ -12,12 +12,17 @@ public class Score {
 
     int sum = 0;
     int avr = 0;
+    int count = 0;
 
     for (int i = 0; i < test.length; i++) {
+      if (test[i] >= 60) {
+        count++;
+      }
       sum += test[i];
       avr = sum / test.length;
     }
     System.out.println("合計点：" + sum);
     System.out.println("平均点：" + avr);
+    System.out.println("平均点越えの教科は" + count + "科目です");
   }
 }
