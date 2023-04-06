@@ -8,5 +8,16 @@ public class Test4 {
     for (int num : lists) {
       System.out.println(num);
     }
+
+    /*数字当て*/
+    int[] numbers = {3, 4, 9};
+    System.out.println("1桁の数字を入力してください");
+    int input = new java.util.Scanner(System.in).nextInt();
+
+    for (int number : numbers) {
+      if (number == input) {
+        System.out.println("当たり！");
+      }
+    }
   }
 }
