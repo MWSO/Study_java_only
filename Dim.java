@@ -8,5 +8,9 @@ public class Dim {
     scores[1][1] = 50;
     scores[1][2] = 90;
     System.out.println(scores[0][1]);
+
+    int[][] tests = { {30, 50, 70}, {40, 60, 80} };
+    System.out.println(tests[0][1]);
+    System.out.println(tests[1][2]);
   }
 }
