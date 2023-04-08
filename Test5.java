@@ -6,6 +6,11 @@ public class Test5 {
     String text = "激レア引いた！";
     email(title, address, text);
     email(address, text);
+    double triArea = calcTriangleArea(5,10);
+    System.out.println("この三角形の面積は" + triArea + "㎠です");
+    double radius = new java.util.Scanner(System.in).nextDouble();
+    double cirArea = calcCirclearea(radius);
+    System.out.println("この円の面積は" + cirArea + "㎠です");
   }
 
   public static void introduceOneself() {
@@ -24,5 +29,15 @@ public class Test5 {
   public static void email(String address, String text) {
     System.out.println(address + "にメールを送りました");
     System.out.println("件名：無題 "+ "\n本文：" + text);
+  }
+
+  public static double calcTriangleArea(double bottom, double height) {
+    double area = bottom * height / 2;
+    return area;
+  }
+
+  public static double calcCirclearea(double radius) {
+    double area = radius * radius * 3.14;
+    return area;
   }
 }
