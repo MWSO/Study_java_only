@@ -7,4 +7,12 @@ public class CalcLogic {
   public static int hiku(int a, int b) {
     return (a - b);
   }
+
+  public static int kake(int a, int b) {
+    return (a * b);
+  }
+
+  public static int wari(int a, int b) {
+    return (a / b);
+  }
 }
