@@ -1,15 +1,15 @@
 public class Dotto {
   public static void main(String[] args) {
     //配列定義
-    int[] array = new int[10];
+    int[] array = new int[30];
     for (int i = 0; i < array.length; i++) {
       array[i] = (i * 10);
     }
 
     boolean flg = true;
-    //[0]～[4]までの偶数
+    //[0]～[14]までの偶数
     System.out.print("偶数：");
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 15; i++) {
       if (flg) {
         System.out.print(array[i]);
         flg = false;
@@ -19,9 +19,9 @@ public class Dotto {
     }
 
     flg = true;
-    //[5]～[9]までの奇数
+    //[15]～[29]までの奇数
     System.out.print("\n" + "奇数：");
-    for (int i = 5; i < array.length; i++) {
+    for (int i = 15; i < array.length; i++) {
       if (flg) {
         System.out.print(array[i]);
         flg = false;
