@@ -6,6 +6,7 @@ public class Kouhan {
 
   public static void show() throws Exception {
     System.out.println("成敗じゃ！");
+    Thread.sleep(3000);
     System.out.println("終了");
     Zenhan.doTogame();
   }
