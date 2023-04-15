@@ -3,14 +3,14 @@ import java.util.*;
 
 public class RandomStr {
   public static String RandomString(int i) {
-    int[] array = new int[256];
+    byte[] bytearray = new byte[256];
     String mystring;
     StringBuffer thebuffer;
     String RandomNum;
 
-    new Random().nextInt(array);
+    new Random().nextBytes(bytearray);
 
-    mystring = new String(array, Charset.forName("UTF-8"));
+    mystring = new String(bytearray, Charset.forName("UTF-8"));
 
     thebuffer = new StringBuffer();
 
@@ -18,9 +18,10 @@ public class RandomStr {
 
     for (int m = 0; m < RandomNum.length(); m++) {
       if (Character.isLetter(RandomNum.charAt(m)) && (i > 0) || Character.isDigit(RandomNum.charAt(m)) && (i > 0)) {
-        thebuffer.append(Random.charAt(m));
+        thebuffer.append(RandomNum.charAt(m));
         i--;
       }
     }
+    return thebuffer.toString();
   }
 }
