@@ -1,4 +1,4 @@
-import java.util.Date;
+import java.util.*;
 
 public class TestAPI {
   public static void main(String[] args) {
@@ -10,5 +10,10 @@ public class TestAPI {
 
     Date date = new Date();
     System.out.println("\n" + "今日は、" + date + "です！");
+
+    List<String> list = new ArrayList<String>(
+      Arrays.asList("apple", "orange", "peach", "melon"));
+    System.out.println(list);
+    System.out.println(list.size());
   }
 }
