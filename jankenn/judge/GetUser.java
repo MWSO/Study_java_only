@@ -1,8 +1,9 @@
 package jankenn.judge;
+import java.util.*;
 
 public class GetUser {
   public static int GetUser() {
-    Scanner stdin = java.util.Scanner(System.in);
+    Scanner stdin = new Scanner(System.in);
 
     while (true) {
       System.out.println("じゃんけんの手を数字で入力してね！");

@@ -1,4 +1,5 @@
 package jankenn.judge;
+import java.util.*;
 
 public class Judge {
   public static String judge(int user, int rand) {
